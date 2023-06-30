@@ -1,8 +1,10 @@
 body {
     background-color: #f6f5f0;
     color: black;
-    font-family: 'Helvetica', sans-serif; /* Adjust this to your preferred font */
-    padding-top: 70px; /* Add space for the fixed header */
+    font-family: "Ysabeau Infant", sans-serif;
+    /* Adjust this to your preferred font */
+    padding-top: 70px;
+    /* Add space for the fixed header */
 }
 
 header {
@@ -33,7 +35,8 @@ header .navbar-toggler {
 }
 
 header .navbar-toggler-icon {
-    background-image: url('menu-icon.png'); /* Replace with your own menu icon */
+    background-image: url('menu-icon.png');
+    /* Replace with your own menu icon */
 }
 
 
@@ -41,10 +44,12 @@ header .navbar-toggler-icon {
 body {
     background-color: #f6f5f0;
     color: black;
-    font-family: 'Helvetica', sans-serif; /* Adjust this to your preferred font */
+    font-family: "Ysabeau Infant", sans-serif;
+    /* Adjust this to your preferred font */
 }
 
-h1, .h1 {
+h1,
+.h1 {
     color: #333;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -64,3 +69,4 @@ img:hover {
     transform: scale(1.05);
     transition: transform 0.5s ease;
 }
+
