@@ -135,6 +135,17 @@ h6,
   text-decoration: none;
 }
 
+
+/* Smartphones display item-wrap----------- */
+
+@media (max-width: 767px) {
+  .item .item-wrap>.work-info {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
 .item .item-wrap:hover img {
   transform: scale(1.05);
 }
