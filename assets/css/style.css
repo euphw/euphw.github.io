@@ -512,3 +512,43 @@ h6,
 .social a:hover {
   color: #000;
 }
+
+
+
+
+/* SECTION VERTICAL TABS */
+.vertical-tabs {
+  margin-right: 20px;
+}
+
+.vertical-tabs .nav-pills .nav-link {
+  padding: 10px 20px;
+  border-radius: 0;
+  border: none;
+  color: #000;
+  transition: background-color 0.3s;
+}
+
+.vertical-tabs .nav-pills .nav-link.active,
+.vertical-tabs .nav-pills .nav-link:hover {
+  background-color: #f0f6f4;
+}
+/* Tab Content */
+.tab-content {
+  padding: 20px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* .section.site-portfolio {
+  margin-bottom: 40px;
+} */
+
+
+/* Adjust the rest of your existing CSS styles as needed */
