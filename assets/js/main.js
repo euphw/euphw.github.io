@@ -91,18 +91,6 @@
         });
       }, true);
 
-      let portfolioTabs = select('#tabs a', true);
-
-      on('click', '#tabs a', function(e) {
-        e.preventDefault();
-        portfolioTabs.forEach(function(el) {
-          el.classList.remove('active');
-        });
-        this.classList.add('active');
-    
-        filterPortfolio(this.getAttribute('data-toggle'));
-      }, true);
-      
       initIsotope();
       filterPortfolio("*");
     }
