@@ -53,11 +53,26 @@
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('#portfolio-grid');
+    let portfolioContainer = select('.portfolio-grid');
     if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.item',
-      });
+      let portfolioIsotope;
+      const initIsotope = () => {
+        portfolioIsotope = new Isotope(portfolioContainer, {
+          itemSelector: ".item",
+        });
+      };
+
+      const filterPortfolio = (filter) => {
+        portfolioIsotope.arrange({
+          filter: filter,
+        });
+        portfolioIsotope.on("arrangeComplete", () => {
+          AOS.refresh();
+          $(".fancybox").fancybox({
+            loop: true,
+          });
+        });
+      };
 
       let portfolioFilters = select('#filters a', true);
 
@@ -75,7 +90,14 @@
           AOS.refresh()
         });
       }, true);
+
+      initIsotope();
+      filterPortfolio("*");
     }
+    
+    $(".fancybox").fancybox({
+      loop: true
+    });
 
   });
 
