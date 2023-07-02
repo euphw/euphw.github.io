@@ -53,7 +53,7 @@
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-grid');
+    let portfolioContainer = select('#portfolio-grid');
     if (portfolioContainer) {
       let portfolioIsotope;
       const initIsotope = () => {
