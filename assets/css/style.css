@@ -538,8 +538,12 @@ h6,
   padding: 20px;
 }
 
-.tab-pane {
+.tab-pane.fade {
   display: none;
+}
+
+.tab-pane.show {
+  display: block;
 }
 
 .tab-pane.active {
